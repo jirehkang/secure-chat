@@ -1,0 +1,111 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9fafb;
+  color: #1e293b;
+}
+
+/* Hero Section */
+header.hero {
+  background: linear-gradient(160deg, #3E2BF6, #A126C3);
+  color: #ffffff;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+header.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+header.hero .tagline {
+  font-size: 1.25rem;
+  color: #94a3b8;
+}
+
+/* Content Sections */
+main.content {
+  max-width: 70%;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+.key-message {
+  font-size: 1.75rem;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  color: #0f172a;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  color: #263852;
+}
+
+/* Card layout for key message pillars */
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.card {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  max-width: 250px;
+}
+
+.pillar {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #4d4d4d;
+  margin-bottom: 0.5rem;
+}
+
+.pillar-description {
+  font-size: 1rem;
+  color: #5a5959;
+  margin-bottom: 0.5rem;
+}
+
+
+/* Link to thought process */
+.thought-process a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.thought-process a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.5rem;
+  color: #94a3b8;
+}
