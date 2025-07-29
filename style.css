@@ -8,7 +8,6 @@ body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   line-height: 1.6;
   background-color: #f9fafb;
-  color: #1e293b;
 }
 
 /* Hero Section */
@@ -20,13 +19,12 @@ header.hero {
 }
 
 header.hero h1 {
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   margin-bottom: 1rem;
 }
 
-header.hero .tagline {
-  font-size: 1.25rem;
-  color: #94a3b8;
+header.hero h2 {
+  font-size: 1.75rem;
 }
 
 /* Content Sections */
@@ -40,17 +38,16 @@ section {
   margin-bottom: 3rem;
 }
 
-.key-message {
-  font-size: 1.75rem;
-  font-style: italic;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+.key-message, .positioning-statement {
+  font-size: 1.25rem;
   margin-bottom: 1rem;
 }
 
-h2 {
-  font-size: 1.75rem;
-  color: #0f172a;
+main.content h2 {
+  font-size: 1.5rem;
+  color: #000000;
   margin-bottom: 1rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 h3 {
@@ -60,6 +57,7 @@ h3 {
 p {
   font-size: 1rem;
   color: #263852;
+  margin-bottom: 1rem;
 }
 
 /* Card layout for key message pillars */
@@ -92,15 +90,43 @@ p {
 
 
 /* Link to thought process */
-.thought-process a {
-  color: #2563eb;
-  text-decoration: none;
-  font-weight: bold;
+/* Basic styling */
+.collapsible {
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  background-color: #f8fafc;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
 }
 
-.thought-process a:hover {
-  text-decoration: underline;
+.collapsible summary {
+  list-style: none; /* hide default arrow */
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+  padding-left: 1.5rem;
 }
+
+/* Hide the built-in marker */
+.collapsible summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Custom plus sign */
+.collapsible summary::before {
+  content: '+';
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: bold;
+  color: #0f172a;
+}
+
+/* Change to minus when open */
+.collapsible[open] summary::before {
+  content: '−'; /* Unicode minus sign */
+}
+
 
 /* Footer */
 footer {
@@ -109,3 +135,4 @@ footer {
   font-size: 0.5rem;
   color: #94a3b8;
 }
+
